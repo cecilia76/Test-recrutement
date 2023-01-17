@@ -1,35 +1,46 @@
-# react-exam
+# Getting Started with Create React App
 
-We do love __beer__ and we want to make an app to order some :beer: !
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To do so we will use the following [API](https://punkapi.com/documentation/v2)
+## Available Scripts
 
-## Rules
+In the project directory, you can run:
 
-- You make use of __React__ or __ReactNative__. State management technology is up to you: Redux, xState (Extra point if you dare to dive into this one), Context ...
-- For styling you can choose what you want 🎨
-- There are 3 pages (__beer list__, __beer detail__, __beer cart__)
+### `yarn start`
 
-Beer list page:
-- Display __all the beers paginated__ with an image, name, volume
-- It's possible to __order__ or __remove__ a beer from the cart
-- We can see if a beer has been __ordered or not__
-- We can navigate to the __beer detail__ and __beer cart__ pages
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Beer details page:
-- The beer details include the following: image, name, description, volume, ingredients, brewers_tips, and more if you feel the need ;)
-- We can see if the beer has been __ordered or not__
-- We can navigate to the __beer list__ and __beer cart__ pages
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Beer cart page:
-- Display a simple list of beers contained in the cart with their image and name
-- We can navigate to the __beer detail__ and __beer list__ pages
+### `yarn test`
 
-## Bonus feature
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Use a navigation dependency
-- When the page is reloaded, the cart remains filled
-- It's possible to __search__ for a beer
-- Responsive design (animations)
-- Implement __tests__ (you can choose your stack: Storybook, Jest, Cypress, QAWolf, ...)
-- Add __linters__
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

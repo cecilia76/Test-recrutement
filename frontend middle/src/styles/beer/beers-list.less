@@ -1,0 +1,76 @@
+.list-beers {
+  .grid {
+    display: grid;
+    margin: 2rem;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    align-items: start;
+
+    &-item {
+      width: 14rem;
+      padding: 4px;
+      background-color: @secondary-color;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0,0,0, 0.1);
+      cursor: pointer;
+      transition: 0.2s;
+      height: 100%;
+    
+      &:hover {
+        transform: translateY(-0.5%);
+        box-shadow: 0 0 1rem 1rem @secondary-color;
+      }
+    }
+  }
+
+  .no-data-found {
+    text-align: center;
+    color: @primary-color;
+    margin: 12rem;
+    font-size: 2rem;
+    background-color: @secondary-color;
+    padding: 1rem;
+    border-radius: 0 3rem;
+  }
+
+  .form-search {
+    text-align: center;
+    background-color: @secondary-color;
+
+    > button {
+      color: @primary-color;
+      background-color: white;
+      border: 1px solid @primary-color;
+      border-radius: 0.7rem;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:disabled {
+        opacity: (0.5);
+      }
+    }
+
+    .input-field {
+      padding: 0.5rem;
+      border: 1px solid @primary-color;
+      color: @primary-color;
+      border-radius: 0.7rem;
+      font-weight: bold;
+
+      &::placeholder{
+        color: @primary-color;
+        opacity: (0.5);
+      }
+    }
+
+    .form-search-btn {
+      padding: 0.5rem;
+      margin: 1rem;
+    }
+
+    .form-clear-btn {
+      padding: 0.5rem;
+    }
+  }
+}

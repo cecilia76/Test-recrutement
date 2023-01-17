@@ -1,0 +1,42 @@
+.beer-details {
+  display: flex;
+  line-height: 2.3rem;
+  margin: 1rem;
+  padding: 3rem;
+  background-color: @secondary-color;
+
+  &-img {
+    height: 30rem;
+  }
+
+  &-content {
+    margin: 0 3rem;
+    font-size: 1.3rem;
+
+    .title {
+      text-align: center;
+    }
+
+    .ingredient {
+      border-top: 0.1rem solid @primary-color;
+      border-bottom: 0.1rem solid @primary-color;
+      margin: 2rem 0;
+
+      &-label {
+        font-weight: bold;
+      }
+
+      
+    }
+  }
+
+  &-btn{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .beer-details {
+    display: block;
+  }
+}
